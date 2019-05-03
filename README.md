@@ -5,9 +5,9 @@ This small typescript nodeJS application allows you to understand
 1. Understand how nodeJS `.pipe()` function actually manage each stream buffer. 
 1. Understand the highWaterMark parameter
 
-There is not yet explicit explanations but this is ready to be started. Play with the parameters and the logs to understand the flows.
+There is no yet explicit explanations but this is ready to be started. Play with the parameters and the logs to understand the flows.
 
-#installation
+## installation
 
 1. `npm install`
 1. `npm run start`
