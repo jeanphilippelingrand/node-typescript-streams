@@ -1,0 +1,15 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "description": "This small typescript nodeJS application allows you to understand how to implement nodeJS streams",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+  },
+  "author": "jeanphilippelingrand",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^11.13.9",
+    "typescript": "^3.4.5"
+  }
+}
