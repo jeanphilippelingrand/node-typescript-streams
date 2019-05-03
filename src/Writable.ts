@@ -1,6 +1,10 @@
 import { Writable as WritableStream } from "stream";
 
+// this stream imitate the writing of data somewhere
+// writing duration is set between 10ms and 1s
 export class Writable extends  WritableStream {
+
+    // function just for fun and understanding
     private readonly hiThere: (props?: any) => void;
 
     constructor(highWaterMark: number, callback: (props?: any) => void) {
@@ -13,14 +17,15 @@ export class Writable extends  WritableStream {
 
     _write(_chunk: any, _encoding: string, callback: (error?: (Error | null)) => void): void {
         this.hiThere({wl: this.writableLength});
-        console.log(_chunk)
         setTimeout(function() {
             console.log('WDONE');
             callback();
-        }, 100)
+        }, randomIntFromInterval(10, 1000))
     }
 }
-// function randomIntFromInterval(min,max) // min and max included
-// {
-//     return Math.floor(Math.random()*(max-min+1)+min);
-// }
+
+// this is to imitate some randomness in the writing process
+function randomIntFromInterval(min,max) // min and max included
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}

@@ -1,8 +1,15 @@
 import { Readable as ReadableStream } from "stream";
 
+// this readable is un infinite reader
+// it will produce the letters from the array `this.source`
 export class Readable extends ReadableStream {
+
+    // source of data
     private source: string[];
+    // where we are reading
     private cursor: number;
+
+    // function just for fun and understanding
     private readonly hiThere: (props: any) => void;
 
     constructor(highWaterMark: number, callback: (props: any) => void) {

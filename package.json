@@ -4,7 +4,7 @@
   "description": "This small typescript nodeJS application allows you to understand how to implement nodeJS streams",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/index.ts"
   },
   "author": "jeanphilippelingrand",
   "license": "ISC",

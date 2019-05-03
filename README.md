@@ -3,9 +3,14 @@
 This small typescript nodeJS application allows you to understand 
 1. How to implement Writable, Readable and Transform streams (Duplex streams not explained yet)
 1. Understand how nodeJS `.pipe()` function actually manage each stream buffer. 
-1. Understand the highWaterMark parameter
+1. Understand the 
+    11. highWaterMark constructor parameter
+    11. readable and writable length internal properties
 
-There is no yet explicit explanations but this is ready to be started. Play with the parameters and the logs to understand the flows.
+IMPORTANT: 
+1. *There is no yet explicit explanations but this is ready to be started and play with the parameters and the logs to understand the streams concept.*
+1. *This is not a library*
+
 
 ## installation
 
